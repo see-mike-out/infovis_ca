@@ -1,15 +1,38 @@
-         ___        ______     ____ _                 _  ___  
-        / \ \      / / ___|   / ___| | ___  _   _  __| |/ _ \ 
-       / _ \ \ /\ / /\___ \  | |   | |/ _ \| | | |/ _` | (_) |
-      / ___ \ V  V /  ___) | | |___| | (_) | |_| | (_| |\__, |
-     /_/   \_\_/\_/  |____/   \____|_|\___/ \__,_|\__,_|  /_/ 
- ----------------------------------------------------------------- 
+Specification
 
+### Pages
+- signin
+- lists
+- single coding page (should duplicate sub-forms)
 
-Hi there! Welcome to AWS Cloud9!
-
-To get started, create some files, play with the terminal,
-or visit https://docs.aws.amazon.com/console/cloud9/ for our documentation.
-
-Happy coding!
-
+### DB Structure
+### users
+{
+  signin_id: xxxx,
+  signin_password: xxxx,
+  signin_log: [dates, ...]
+}
+#### db: samples
+{
+  id: n-xxx-n-xxxx,
+  url: http://~,
+  subvis: n,
+  title: xxxx,
+  is_coded: [
+    {name: xxxx, date: yyyy-mm-dd hh:mm:ss}, ...
+  ]
+}
+#### coding data
+{
+  id: n-xxx-n-xxxx, //identifier 1
+  coder: xxxx, // identifier 2
+  date: yyyy-mm-dd hh:mm:ss,
+  code_article: [
+    {term: xxxx, code: xxxx}, ...
+  ],
+  code_subvis: [
+    {order: n, code_data: [
+      {term: xxxx, code: xxxx}, ...
+    ]}, ...
+  ]
+}

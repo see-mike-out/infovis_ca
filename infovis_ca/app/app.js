@@ -8,9 +8,29 @@ app.set('view engine', 'handlebars');
 
 app.set('port', process.env.PORT || 3000);
 
+app.use(function(req, res, next) {
+  res.locals.showTests = app.get('env') !== 'production' && req.query.test === '1';
+  next();
+});
+app.use(require('body-parser').urlencoded({extended: true}));
+
 app.get('/', function(req, res) {
   res.render('home');
 });
+
+app.get('/signin', function(req, res) {
+  res.render('signin');
+});
+
+app.get('/signup', function(req, res) {
+  res.render('signup');
+});
+
+app.post('/signup_process', function(req, res) {
+  console.log(req.body);
+  res.redirect(303, '/signin');
+});
+
 
 app.get('/about', function(req, res) {
   res.type('text/plain');
@@ -19,6 +39,7 @@ app.get('/about', function(req, res) {
 
 //---- always at the end of setting routes
 app.use(express.static(__dirname + '/public'));
+app.use('/bs', express.static(__dirname + '/node_modules/bootstrap/dist'));
 
 app.use(function(req, res) { //404 error
   res.type('text/plain');
