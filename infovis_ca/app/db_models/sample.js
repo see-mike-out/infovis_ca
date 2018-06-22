@@ -8,7 +8,8 @@ let SampleSchema = new Schema({
     year: String,
     journal: String,
     title: String,
-    ulr: String,
+    url: String,
+    order: Number,
     is_coded: [ { coder: String, date: Date } ]
 });
 

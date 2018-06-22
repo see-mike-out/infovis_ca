@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left">
+      <h3>코딩 목록</h3>
+      <div class="card">
+        <div class="card-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Title</th>
+                <th scope="col"># Subvis</th>
+                <th scope="col">Done?</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each samples}}
+              <tr>
+                <th scope="row">{{this.order}}</th>
+                <td><a href="code/{{this.name}}">{{this.name}}</a></td>
+                <td><a href="{{this.url}}" target="_blank">{{this.title}}</a></td>
+                <td>{{this.subvis}}</td>
+                <td>
+                  {{#if this.I_coded}}
+                  <i class="fas fa-check-circle text-success"></i>
+                  {{else}}
+                  <i class="far fa-circle text-warning"></i>
+                  {{/if}}
+                </td>
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,26 +1,29 @@
-const csv = require('ya-csv');
-const MongoClient = require('mongodb').MongoClient;
-const ObjectID = require('mongodb').ObjectID;
-const assert = require('assert');
+let csv = require('csvtojson');
+let csvFilePath='sample_roaster.csv';
+let mongoose = require('mongoose');
+let Sample = require('../db_models/sample');
+mongoose.connect('mongodb://localhost/infovis_ca');
 
-// Connect
-const connection = (closure) => {
-  return MongoClient.connect('mongodb://localhost:27017', (err, client) => {
-    assert.equal(null, err);
-        
-    let db = client.db('infovis_ca');
-    closure(db);
-  });
-};
-
-console.log('connection 1')
-
-let reader = csv.createCsvFileReader('sample_roaster.csv', { columnsFromHeader: true });
-
-console.log('data start')
-reader.addListener('data', function(data) {
-  connection((db) => {
-    db.collection('samples')
-      .insertOne(data);
-  });
-});
+csv()
+.fromFile(csvFilePath)
+.on('json',(jsonObj)=>{
+  //console.log(jsonObj)
+  jsonObj['order'] = parseInt(jsonObj.name.split('-')[0])
+  try {
+    Sample.updateOne(
+      { name : jsonObj.name },
+      { $set: { order : jsonObj.order } },
+      { upsert: false },
+      function(err, n) {
+        console.log(err);
+        console.log(n);
+      }
+    );
+  } catch (e) {
+    console.log(e);
+  }
+})
+.on('done',(error)=>{
+    console.log('end')
+})
+ 

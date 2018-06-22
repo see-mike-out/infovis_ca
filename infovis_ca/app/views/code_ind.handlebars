@@ -1,0 +1,1032 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-7 text-left">
+      <h3>코딩 하기: {{{ title }}} </h3>
+      <br/>
+      <div class="card">
+        <div class="card-body">
+          <p>항목을 클릭하거나, 선택할 때 가이드가 자동 스크롤됩니다.</p>
+          <form>
+            <!--개별 시각화-->
+            <h3 class="text-primary">개별시각화: 기본/선형성/메시지</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">차원</th>
+                  <th scope="col">항목</th>
+                  <th scope="col">데스크탑</th>
+                  <th scope="col">모바일</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!--개별 시각화 / 기본 / 단순성-->
+                <tr>
+                  <td><strong>기본</strong></td>
+                  <td data-role="title"><a href="#individual-basic-simplicity">시각적 단순성</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_basic_simplicity_large">
+                      <option value="default">-</option>
+                      <option value="simple">단순</option>
+                      <option value="middle">중간</option>
+                      <option value="complex">복잡</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_basic_simplicity_small">
+                      <option value="default">-</option>
+                      <option value="simple">단순</option>
+                      <option value="middle">중간</option>
+                      <option value="complex">복잡</option>
+                    </select>
+                  </td>
+                </tr>
+                
+                <!--개별 시각화 / 기본 / 구성-->
+                <tr>
+                  <td></td>
+                  <td data-role="title"><a href="#individual-basic-construction">구성</a></td>
+                  <td data-role="option">			
+                    <select class="form-control" name="individual_basic_construction_large">
+                      <option value="default">-</option>
+                      <option value="static">정적</option>
+                      <option value="dynamic">동적</option>
+                      <option value="video">동영상</option>
+                      <option value="interface">인터페이스</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_basic_construction_small">
+                      <option value="default">-</option>
+                      <option value="static">정적</option>
+                      <option value="dynamic">동적</option>
+                      <option value="video">동영상</option>
+                      <option value="interface">인터페이스</option>
+                    </select>
+                  </td>
+                </tr>
+                
+                <!--개별 시각화 / 선형성 / 순서성-->
+                <tr>
+                  <td>선형성</td>
+                  <td data-role="title"><a href="#individual-linearity-ordering">순서성</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_linearity_ordering_large">
+                      <option value="default">-</option>
+                      <option value="na">해당없음</option>
+                      <option value="true">있음</option>
+                      <option value="weak">약함</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_linearity_ordering_small">
+                      <option value="default">-</option>
+                      <option value="na">해당없음</option>
+                      <option value="true">있음</option>
+                      <option value="weak">약함</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                </tr>
+                
+                <!--개별 시각화 / 선형성 / 정지가능-->
+                <tr>
+                  <td></td>
+                  <td data-role="title"><a href="#individual-linearity-stoppable">정지가능</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_linearity_stoppable_large">
+                      <option value="default">-</option>
+                      <option value="na">해당없음</option>
+                      <option value="able">가능</option>
+                      <option value="user">사용자 조절</option>
+                      <option value="unable">불가능</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_linearity_stoppable_small">
+                      <option value="default">-</option>
+                      <option value="na">해당없음</option>
+                      <option value="able">가능</option>
+                      <option value="user">사용자 조절</option>
+                      <option value="unable">불가능</option>
+                    </select>
+                  </td>
+                </tr>
+                
+                <!--개별 시각화 / 선형성 / 건너뛰기-->
+                <tr>
+                  <td></td>
+                  <td data-role="title"><a href="#individual-linearity-skippable">건너뛰기</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_linearity_skippable_large">
+                      <option value="default">-</option>
+                      <option value="na">해당없음</option>
+                      <option value="able">가능</option>
+                      <option value="unable">불가능</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_linearity_skippable_small">
+                      <option value="default">-</option>
+                      <option value="na">해당없음</option>
+                      <option value="able">가능</option>
+                      <option value="unable">불가능</option>
+                    </select>
+                  </td>
+                </tr>
+                
+                <!--개별 시각화 / 선형성 / 전환방법 tbd-->
+                <tr>
+                  <td></td>
+                  <td data-role="title"><a href="#individual-linearity-transition">전환방법</a></td>
+                  <td data-role="option">
+                    <div class="form-check">
+                      <input name="individual_linearity_transition_large_1" id="individual_linearity_transition_large_1" value="freeBrowse" class="form-check-input" type="checkbox">
+                      <label class="form-check-label" for="individual_linearity_transition_large_1">자유탐색</label>
+                    </div>
+                    <div class="form-check">
+                      <input name="individual_linearity_transition_large_2" id="individual_linearity_transition_large_2" value="scroll" class="form-check-input" type="checkbox">
+                      <label class="form-check-label" for="individual_linearity_transition_large_2">스크롤</label>
+                    </div>
+                    <div class="form-check">
+                      <input name="individual_linearity_transition_large_3" id="individual_linearity_transition_large_3" value="video" class="form-check-input" type="checkbox">
+                      <label class="form-check-label" for="individual_linearity_transition_large_3">영상</label>
+                    </div>
+                    <div class="form-check">
+                      <input name="individual_linearity_transition_large_4" id="individual_linearity_transition_large_4" value="auto" class="form-check-input" type="checkbox">
+                      <label class="form-check-label" for="individual_linearity_transition_large_4">자동</label>
+                    </div>
+                    <div class="form-check">
+                      <input name="individual_linearity_transition_large_5" id="individual_linearity_transition_large_5" value="orderTab" class="form-check-input" type="checkbox">
+                      <label class="form-check-label" for="individual_linearity_transition_large_5">순서탭</label>
+                    </div>
+                    <div class="form-check">
+                      <input name="individual_linearity_transition_large_6" id="individual_linearity_transition_large_6" value="topicTab" class="form-check-input" type="checkbox">
+                      <label class="form-check-label" for="individual_linearity_transition_large_6">주제탭</label>
+                    </div>
+                    <div class="form-check">
+                      <input name="individual_linearity_transition_large_7" id="individual_linearity_transition_large_7" value="toggle" class="form-check-input" type="checkbox">
+                      <label class="form-check-label" for="individual_linearity_transition_large_7">토글</label>
+                    </div>
+                    <div class="form-check">
+                      <input name="individual_linearity_transition_large_8" id="individual_linearity_transition_large_8" value="carousel" class="form-check-input" type="checkbox">
+                      <label class="form-check-label" for="individual_linearity_transition_large_8">이전/다음</label>
+                    </div>
+                  </td>		
+                  <td data-role="option">
+                    <div class="form-check">
+                      <input name="individual_linearity_transition_small_1" id="individual_linearity_transition_small_1" value="freeBrowse" class="form-check-input" type="checkbox">
+                      <label class="form-check-label" for="individual_linearity_transition_small_1">자유탐색</label>
+                    </div>
+                    <div class="form-check">
+                      <input name="individual_linearity_transition_small_2" id="individual_linearity_transition_small_2" value="scroll" class="form-check-input" type="checkbox">
+                      <label class="form-check-label" for="individual_linearity_transition_small_2">스크롤</label>
+                    </div>
+                    <div class="form-check">
+                      <input name="individual_linearity_transition_small_3" id="individual_linearity_transition_small_3" value="video" class="form-check-input" type="checkbox">
+                      <label class="form-check-label" for="individual_linearity_transition_small_3">영상</label>
+                    </div>
+                    <div class="form-check">
+                      <input name="individual_linearity_transition_small_4" id="individual_linearity_transition_small_4" value="auto" class="form-check-input" type="checkbox">
+                      <label class="form-check-label" for="individual_linearity_transition_small_4">자동</label>
+                    </div>
+                    <div class="form-check">
+                      <input name="individual_linearity_transition_small_5" id="individual_linearity_transition_small_5" value="orderTab" class="form-check-input" type="checkbox">
+                      <label class="form-check-label" for="individual_linearity_transition_small_5">순서탭</label>
+                    </div>
+                    <div class="form-check">
+                      <input name="individual_linearity_transition_small_6" id="individual_linearity_transition_small_6" value="topicTab" class="form-check-input" type="checkbox">
+                      <label class="form-check-label" for="individual_linearity_transition_small_6">주제탭</label>
+                    </div>
+                    <div class="form-check">
+                      <input name="individual_linearity_transition_small_7" id="individual_linearity_transition_small_7" value="toggle" class="form-check-input" type="checkbox">
+                      <label class="form-check-label" for="individual_linearity_transition_small_7">토글</label>
+                    </div>
+                    <div class="form-check">
+                      <input name="individual_linearity_transition_small_8" id="individual_linearity_transition_small_8" value="carousel" class="form-check-input" type="checkbox">
+                      <label class="form-check-label" for="individual_linearity_transition_small_8">이전/다음</label>
+                    </div>
+                  </td>
+                </tr>
+                
+                <!--개별 시각화 / 선형성 / 하이라이트-->
+                <tr>
+                  <td></td>
+                  <td data-role="title"><a href="#individual-linearity-highlight">하이라이트</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_linearity_highlight_large">
+                      <option value="default">-</option>
+                      <option value="strong">명시적</option>
+                      <option value="weak">약함</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>		
+                  <td data-role="option">
+                    <select class="form-control" name="individual_linearity_highlight_small">
+                      <option value="default">-</option>
+                      <option value="strong">명시적</option>
+                      <option value="weak">약함</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                </tr>
+                
+                <!--개별 시각화 / 메시지 / 도입/소개-->
+                <tr>
+                  <td><strong>메시지</strong></td>
+                  <td data-role="title"><a href="#individual-message-introduction">도입/소개</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_message_introduction_large">
+                      <option value="default">-</option>
+                      <option value="long">장문</option>
+                      <option value="short">단문</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_message_introduction_small">
+                      <option value="default">-</option>
+                      <option value="long">장문</option>
+                      <option value="short">단문</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                </tr>
+                
+                <!--개별 시각화 / 메시지 / 해석[전체]-->
+                <tr>
+                  <td></td>
+                  <td data-role="title"><a href="#individual-message-analysisEntire">해석[전체]</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_message_analysisEntire_large">
+                      <option value="default">-</option>
+                      <option value="long">장문</option>
+                      <option value="short">단문</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_message_analysisEntire_small">
+                      <option value="default">-</option>
+                      <option value="long">장문</option>
+                      <option value="short">단문</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!--개별 시각화 / 메시지 / 해석[장면]-->
+                <tr>
+                  <td></td>
+                  <td data-role="title"><a href="#individual-message-analysisScene">해석[장면]</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_message_analysisScene_large">
+                      <option value="default">-</option>
+                      <option value="long">장문</option>
+                      <option value="short">단문</option>
+                      <option value="none">없음</option>
+                      <option value="na">해당없음</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_message_analysisScene_small">
+                      <option value="default">-</option>
+                      <option value="long">장문</option>
+                      <option value="short">단문</option>
+                      <option value="none">없음</option>
+                      <option value="na">해당없음</option>
+                    </select>
+                  </td>
+                </tr>
+		
+                <!--개별 시각화 / 메시지 / 상세화[길이]-->
+                <tr>
+                  <td></td>
+                  <td data-role="title"><a href="#individual-message-elaborationLength">상세화[길이]</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_message_elaborationLength_large">
+                      <option value="default">-</option>
+                      <option value="long">장문</option>
+                      <option value="short">단문</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_message_elaborationLength_small">
+                      <option value="default">-</option>
+                      <option value="long">장문</option>
+                      <option value="short">단문</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!--개별 시각화 / 메시지 / 상세화[분포]-->
+                <tr>
+                  <td></td>
+                  <td data-role="title"><a href="#individual-message-elaborationDistribution">상세화[분포]</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_message_elaborationDistribution_large">
+                      <option value="default">-</option>
+                      <option value="even">전반적</option>
+                      <option value="uneven">선택적</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_message_elaborationDistribution_small">
+                      <option value="default">-</option>
+                      <option value="even">전반적</option>
+                      <option value="uneven">선택적</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table><!--폼 표: 개별시각화-기본/선형성/메시지-->
+            
+            
+            <br/><br/>
+            <!--개별 시각화-->
+            <h3 class="text-primary">개별시각화: 상호작용성</h3>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">차원</th>
+                  <th scope="col">항목</th>
+                  <th scope="col">데스크탑</th>
+                  <th scope="col">모바일</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!--개별 시각화 / 상호작용성 / 기능수-->
+                <tr>
+                  <td><strong>상호작용성</strong></td>
+                  <td data-role="title"><a href="#individual-interactivity-nFunctions">기능 수</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_nFunctions_large">
+                      <option value="default">-</option>
+                      <option value="many">5+</option>
+                      <option value="middle">3~4</option>
+                      <option value="few">1~2</option>
+                      <option value="none">0</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_nFunctions_small">
+                      <option value="default">-</option>
+                      <option value="many">5+</option>
+                      <option value="middle">3~4</option>
+                      <option value="few">1~2</option>
+                      <option value="none">0</option>
+                    </select>
+                  </td>
+                </tr>
+                
+                <!--개별 시각화 / 상호작용성 / 식별[자유도]-->
+                <tr>		
+                  <td></td>
+                  <td data-role="title"><a href="#individual-interactivity-identifyFreedom">식별[자유도]</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_identifyFreedom_large">
+                      <option value="default">-</option>
+                      <option value="free">자유</option>
+                      <option value="middle">중간</option>
+                      <option value="mixed">혼합</option>
+                      <option value="unfree">부자유</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_identifyFreedom_small">
+                      <option value="default">-</option>
+                      <option value="free">자유</option>
+                      <option value="middle">중간</option>
+                      <option value="mixed">혼합</option>
+                      <option value="unfree">부자유</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!--개별 시각화 / 상호작용성 / 삭별[난이도]-->
+                <tr>		
+                  <td></td>
+                  <td data-role="title"><a href="#individual-interactivity-identifyDifficulty">식별[난이도]</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_identifyDifficulty_large">
+                      <option value="default">-</option>				
+                      <option value="hard">어려움</option>
+                      <option value="middle">중간</option>
+                      <option value="easyUse">쉬움(사용성)</option>
+                      <option value="easyInduce">쉬움(유도성)</option>
+                      <option value="unneeded">불필요</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_identifyDifficulty_small">
+                      <option value="default">-</option>				
+                      <option value="hard">어려움</option>
+                      <option value="middle">중간</option>
+                      <option value="easyUse">쉬움(사용성)</option>
+                      <option value="easyInduce">쉬움(유도성)</option>
+                      <option value="unneeded">불필요</option>
+                    </select>
+                  </td>
+                </tr>
+                
+                <!--개별 시각화 / 상호작용성 / 추상/정교[자유도]-->
+                <tr>		
+                  <td></td>
+                  <td data-role="title"><a href="#individual-interactivity-elaborateFreedom">추상/정교[자유도]</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_elaborateFreedom_large">
+                      <option value="default">-</option>
+                      <option value="free">자유</option>
+                      <option value="middle">중간</option>
+                      <option value="mixed">혼합</option>
+                      <option value="unfree">부자유</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_elaborateFreedom_small">
+                      <option value="default">-</option>
+                      <option value="free">자유</option>
+                      <option value="middle">중간</option>
+                      <option value="mixed">혼합</option>
+                      <option value="unfree">부자유</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!--개별 시각화 / 상호작용성 / 추상/정교[난이도]-->
+                <tr>		
+                  <td></td>
+                  <td data-role="title"><a href="#individual-interactivity-elaborateDifficulty">추상/정교[난이도]</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_elaborateDifficulty_large">
+                      <option value="default">-</option>				
+                      <option value="hard">어려움</option>
+                      <option value="middle">중간</option>
+                      <option value="easyUse">쉬움(사용성)</option>
+                      <option value="easyInduce">쉬움(유도성)</option>
+                      <option value="unneeded">불필요</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_elaborateDifficulty_small">
+                      <option value="default">-</option>				
+                      <option value="hard">어려움</option>
+                      <option value="middle">중간</option>
+                      <option value="easyUse">쉬움(사용성)</option>
+                      <option value="easyInduce">쉬움(유도성)</option>
+                      <option value="unneeded">불필요</option>
+                    </select>
+                  </td>
+                </tr>
+                
+                <!--개별 시각화 / 상호작용성 / 요약[자유도]-->
+                <tr>		
+                  <td></td>
+                  <td data-role="title"><a href="#individual-interactivity-summarizeFreedom">요약[자유도]</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_summarizeFreedom_large">
+                      <option value="default">-</option>
+                      <option value="free">자유</option>
+                      <option value="middle">중간</option>
+                      <option value="mixed">혼합</option>
+                      <option value="unfree">부자유</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_summarizeFreedom_small">
+                      <option value="default">-</option>
+                      <option value="free">자유</option>
+                      <option value="middle">중간</option>
+                      <option value="mixed">혼합</option>
+                      <option value="unfree">부자유</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!--개별 시각화 / 상호작용성 / 요약[난이도]-->
+                <tr>		
+                  <td></td>
+                  <td data-role="title"><a href="#individual-interactivity-summarizeDifficulty">요약[난이도]</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_summarizeDifficulty_large">
+                      <option value="default">-</option>				
+                      <option value="hard">어려움</option>
+                      <option value="middle">중간</option>
+                      <option value="easyUse">쉬움(사용성)</option>
+                      <option value="easyInduce">쉬움(유도성)</option>
+                      <option value="unneeded">불필요</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_summarizeDifficulty_small">
+                      <option value="default">-</option>				
+                      <option value="hard">어려움</option>
+                      <option value="middle">중간</option>
+                      <option value="easyUse">쉬움(사용성)</option>
+                      <option value="easyInduce">쉬움(유도성)</option>
+                      <option value="unneeded">불필요</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!--개별 시각화 / 상호작용성 / 검색[자유도]-->
+                <tr>		
+                  <td></td>
+                  <td data-role="title"><a href="#individual-interactivity-searchFreedom">검색[자유도]</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_searchFreedom_large">
+                      <option value="default">-</option>
+                      <option value="free">자유</option>
+                      <option value="middle">중간</option>
+                      <option value="mixed">혼합</option>
+                      <option value="unfree">부자유</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_searchFreedom_small">
+                      <option value="default">-</option>
+                      <option value="free">자유</option>
+                      <option value="middle">중간</option>
+                      <option value="mixed">혼합</option>
+                      <option value="unfree">부자유</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!--개별 시각화 / 상호작용성 / 검색[난이도]-->
+                <tr>		
+                  <td></td>
+                  <td data-role="title"><a href="#individual-interactivity-searchDifficulty">검색[난이도]</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_searchDifficulty_large">
+                      <option value="default">-</option>				
+                      <option value="hard">어려움</option>
+                      <option value="middle">중간</option>
+                      <option value="easyUse">쉬움(사용성)</option>
+                      <option value="easyInduce">쉬움(유도성)</option>
+                      <option value="unneeded">불필요</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_searchDifficulty_small">
+                      <option value="default">-</option>				
+                      <option value="hard">어려움</option>
+                      <option value="middle">중간</option>
+                      <option value="easyUse">쉬움(사용성)</option>
+                      <option value="easyInduce">쉬움(유도성)</option>
+                      <option value="unneeded">불필요</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!--개별 시각화 / 상호작용성 / 탐색[자유도]-->
+                <tr>		
+                  <td></td>
+                  <td data-role="title"><a href="#individual-interactivity-browseFreedom">탐색[자유도]</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_browseFreedom_large">
+                      <option value="default">-</option>
+                      <option value="free">자유</option>
+                      <option value="middle">중간</option>
+                      <option value="mixed">혼합</option>
+                      <option value="unfree">부자유</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_browseFreedom_small">
+                      <option value="default">-</option>
+                      <option value="free">자유</option>
+                      <option value="middle">중간</option>
+                      <option value="mixed">혼합</option>
+                      <option value="unfree">부자유</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!--개별 시각화 / 상호작용성 / 탐색[난이도]-->
+                <tr>		
+                  <td></td>
+                  <td data-role="title"><a href="#individual-interactivity-browseDifficulty">탐색[난이도]</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_browseDifficulty_large">
+                      <option value="default">-</option>				
+                      <option value="hard">어려움</option>
+                      <option value="middle">중간</option>
+                      <option value="easyUse">쉬움(사용성)</option>
+                      <option value="easyInduce">쉬움(유도성)</option>
+                      <option value="unneeded">불필요</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_browseDifficulty_small">
+                      <option value="default">-</option>				
+                      <option value="hard">어려움</option>
+                      <option value="middle">중간</option>
+                      <option value="easyUse">쉬움(사용성)</option>
+                      <option value="easyInduce">쉬움(유도성)</option>
+                      <option value="unneeded">불필요</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!--개별 시각화 / 상호작용성 / 필터[자유도]-->
+                <tr>		
+                  <td></td>
+                  <td data-role="title"><a href="#individual-interactivity-filterFreedom">필터[자유도]</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_filterFreedom_large">
+                      <option value="default">-</option>
+                      <option value="free">자유</option>
+                      <option value="middle">중간</option>
+                      <option value="mixed">혼합</option>
+                      <option value="unfree">부자유</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_filterFreedom_small">
+                      <option value="default">-</option>
+                      <option value="free">자유</option>
+                      <option value="middle">중간</option>
+                      <option value="mixed">혼합</option>
+                      <option value="unfree">부자유</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!--개별 시각화 / 상호작용성 / 필터[난이도]-->
+                <tr>		
+                  <td></td>
+                  <td data-role="title"><a href="#individual-interactivity-filterDifficulty">필터[난이도]</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_filterDifficulty_large">
+                      <option value="default">-</option>				
+                      <option value="hard">어려움</option>
+                      <option value="middle">중간</option>
+                      <option value="easyUse">쉬움(사용성)</option>
+                      <option value="easyInduce">쉬움(유도성)</option>
+                      <option value="unneeded">불필요</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_filterDifficulty_small">
+                      <option value="default">-</option>				
+                      <option value="hard">어려움</option>
+                      <option value="middle">중간</option>
+                      <option value="easyUse">쉬움(사용성)</option>
+                      <option value="easyInduce">쉬움(유도성)</option>
+                      <option value="unneeded">불필요</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!--개별 시각화 / 상호작용성 / 비교[자유도]-->
+                <tr>		
+                  <td></td>
+                  <td data-role="title"><a href="#individual-interactivity-compareFreedom">비교[자유도]</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_compareFreedom_large">
+                      <option value="default">-</option>
+                      <option value="free">자유</option>
+                      <option value="middle">중간</option>
+                      <option value="mixed">혼합</option>
+                      <option value="unfree">부자유</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_compareFreedom_small">
+                      <option value="default">-</option>
+                      <option value="free">자유</option>
+                      <option value="middle">중간</option>
+                      <option value="mixed">혼합</option>
+                      <option value="unfree">부자유</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!--개별 시각화 / 상호작용성 / 필터[난이도]-->
+                <tr>		
+                  <td></td>
+                  <td data-role="title"><a href="#individual-interactivity-compareDifficulty">비교[난이도]</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_compareDifficulty_large">
+                      <option value="default">-</option>				
+                      <option value="hard">어려움</option>
+                      <option value="middle">중간</option>
+                      <option value="easyUse">쉬움(사용성)</option>
+                      <option value="easyInduce">쉬움(유도성)</option>
+                      <option value="unneeded">불필요</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_compareDifficulty_small">
+                      <option value="default">-</option>				
+                      <option value="hard">어려움</option>
+                      <option value="middle">중간</option>
+                      <option value="easyUse">쉬움(사용성)</option>
+                      <option value="easyInduce">쉬움(유도성)</option>
+                      <option value="unneeded">불필요</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!--개별 시각화 / 상호작용성 / 관계[자유도]-->
+                <tr>		
+                  <td></td>
+                  <td data-role="title"><a href="#individual-interactivity-relateFreedom">관계[자유도]</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_relateFreedom_large">
+                      <option value="default">-</option>
+                      <option value="free">자유</option>
+                      <option value="middle">중간</option>
+                      <option value="mixed">혼합</option>
+                      <option value="unfree">부자유</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_relateFreedom_small">
+                      <option value="default">-</option>
+                      <option value="free">자유</option>
+                      <option value="middle">중간</option>
+                      <option value="mixed">혼합</option>
+                      <option value="unfree">부자유</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!--개별 시각화 / 상호작용성 / 관계[난이도]-->
+                <tr>		
+                  <td></td>
+                  <td data-role="title"><a href="#individual-interactivity-relateDifficulty">관계[난이도]</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_relateDifficulty_large">
+                      <option value="default">-</option>				
+                      <option value="hard">어려움</option>
+                      <option value="middle">중간</option>
+                      <option value="easyUse">쉬움(사용성)</option>
+                      <option value="easyInduce">쉬움(유도성)</option>
+                      <option value="unneeded">불필요</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_relateDifficulty_small">
+                      <option value="default">-</option>				
+                      <option value="hard">어려움</option>
+                      <option value="middle">중간</option>
+                      <option value="easyUse">쉬움(사용성)</option>
+                      <option value="easyInduce">쉬움(유도성)</option>
+                      <option value="unneeded">불필요</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!--개별 시각화 / 상호작용성 / 관계[자유도]-->
+                <tr>		
+                  <td></td>
+                  <td data-role="title"><a href="#individual-interactivity-reconfigureFreedom">관계[자유도]</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_reconfigureFreedom_large">
+                      <option value="default">-</option>
+                      <option value="free">자유</option>
+                      <option value="middle">중간</option>
+                      <option value="mixed">혼합</option>
+                      <option value="unfree">부자유</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_reconfigureFreedom_small">
+                      <option value="default">-</option>
+                      <option value="free">자유</option>
+                      <option value="middle">중간</option>
+                      <option value="mixed">혼합</option>
+                      <option value="unfree">부자유</option>
+                      <option value="none">없음</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <!--개별 시각화 / 상호작용성 / 관계[난이도]-->
+                <tr>		
+                  <td></td>
+                  <td data-role="title"><a href="#individual-interactivity-reconfigureDifficulty">관계[난이도]</a></td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_reconfigureDifficulty_large">
+                      <option value="default">-</option>				
+                      <option value="hard">어려움</option>
+                      <option value="middle">중간</option>
+                      <option value="easyUse">쉬움(사용성)</option>
+                      <option value="easyInduce">쉬움(유도성)</option>
+                      <option value="unneeded">불필요</option>
+                    </select>
+                  </td>
+                  <td data-role="option">
+                    <select class="form-control" name="individual_interactivity_reconfigureDifficulty_small">
+                      <option value="default">-</option>				
+                      <option value="hard">어려움</option>
+                      <option value="middle">중간</option>
+                      <option value="easyUse">쉬움(사용성)</option>
+                      <option value="easyInduce">쉬움(유도성)</option>
+                      <option value="unneeded">불필요</option>
+                    </select>
+                  </td>
+                </tr>
+
+
+
+              </tbody>
+            </table><!--폼 표: 개별시각화-기본/선형성/메시지-->
+            
+            
+          </form><!--폼-->
+        </div><!--카드 내용-->
+      </div><!--카드-->
+    </div> <!--레이아웃-->
+    
+    <!--가이드북 영역-->
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-5 text-left">
+      <h3>코딩 가이드 북</h3>
+      <br/>
+      <div class="card on_fixed  sticky-top">
+        <div class="card-body">
+          <a name="general-linearity"></a>
+          <h4>선형성</h4>
+          <!--설명: 선형성 / 복수성-->
+          <a name="general-linearity-plurality"></a>
+          <h5>복수성</h5>
+          <h6>정의</h6>
+          <ul>
+            <li>기사 속에 하나의 시각화가 있는지, 아니면 여러개의 시각화가 있는지 여부</li>
+          </ul>
+          <h6>항목</h6>
+          <ul>
+            <li>단일: 전체 기사에 시각화가 한 개인 경우</li>
+            <li>복수: 전체 기사에 시각화가 두 개 이상인 경우</li>
+          </ul>
+          <h6>도움말</h6>
+          <ul>
+            <li>여러 장면의 시각화가 하나의 틀 안에 구성되어 있다고 여겨지는 경우
+              <ul>
+                <li>장면 간의 기반 데이터가 현저하게 다른 경우 → [복수]</li>
+                <li>그렇지 않고, 기반 데이터는 같지만 어떤 부분을 추출해 보여주거나, 따로 떼어 보여주는 경우 → [단일]</li>
+              </ul>
+            </li>
+            <li>복수의 시각화가 아래의 조건(small multiples)을 만족하는 경우 → [단일]
+              <ul>
+                <li>동일한 시각적 재현을 통해 구성되어 있음</li>
+                <li>행과 열을 갖추어 정렬되어 있음</li>
+                <li>물리적으로 인접하게 배치되어 있음 (가령 스크롤이 없거나 1~2번 안에서 모든 세부 시각화를 한번에 확인 가능)</li>
+              </ul>
+            </li>
+          </ul>
+          
+          <!--설명: 선형성 / 순서성-->
+          <a name="general-linearity-ordering"></a>
+          <h5>순서성</h5>
+          <h6>정의</h6>
+          <ul>
+            <li>한 기사 안에서 각 시각화의 순서를 저자가 의도한 정도</li>
+          </ul>
+          <h6>항목</h6>
+          <ul>
+            <li>해당없음: 전체 기사에 시각화가 한 개인 경우 (복수성=단일)</li>
+            아래는 기사 안에 시각화가 여러개 있을 때 (복수성=복수)
+            <li>있음: 작가가 분명하게 시각화의 진행 순서를 의도하였음</li>
+            <li>약함: 작가가 시각화의 순서를 의도하였지만, 그 의도가 약한 경우</li>
+            <li>없음: 시각화를 병렬적으로 나열한 것 뿐이라서, 사실 어느 시각화를 먼저 보더라도 작가의 의도에 반하지 않는 경우</li>
+          </ul>
+          <h6>도움말</h6>
+          <ul>
+            <li>기사 안에서 작가가 의도한 진행 순서라 함은, 작가가 일련의 서사적 틀을 구성하여 그 안에 배치하였는지 정도</li>
+            <li>시각화들의 배치가 사사 안에 잘 녹여져 있다 / 시각화들을 배치하여 이야기를 구성하고 있다 → [있음]</li>
+            <li>배치에 어떤 의도된 순서는 있겠으나 다소 병렬적인 경우 → [약함]</li>
+            <li>각 시각화에 번호가 달려 있는데 아무리 봐도 그 번호에 의미가 없는 경우 → [없음]</li>
+            <li>기사 안에 여러 시각화가 그냥 나열되어 있다고 느껴지는 경우 → [없음]</li>
+          </ul>
+          
+          <!--설명: 선형성 / 건너뛰기-->
+          <a name="general-linearity-skippable"></a>
+          <h5>건너뛰기</h5>
+          <h6>정의</h6>
+          <ul>
+            <li>기사 속에 복수의 시각화가 있고, 제공되는 순서를 변경하여 볼 수 있는지 여부</li>
+          </ul>
+          <h6>항목</h6>
+          <ul>
+            <li>해당없음: 전체 기사에 시각화가 한 개인 경우 (복수성=단일)</li>
+            아래는 기사 안에 시각화가 여러개 있을 때 (복수성=복수)
+            <li>가능: 다른 시각화를 건너 뛰어서 볼 수 있음</li>
+            <li>불가능: 다른 시각화를 건너 뛰어서 볼 수 없고, 중간에 있는 시각화를 꼭 거쳐야 하는 경우</li>
+          </ul>
+          <h6>도움말</h6>
+          <ul>
+            <li>복수의 시각화가 나열되어 있는데, 단순히 스크롤 위치 변경을 통해 넘어가서 볼 수 있는 경우 → [가능]</li>
+            <li>스크롤로 전환이 유도되는 상호작용기능이 있는 경우 → [불가능]</li>
+            <li>‘다음(NEXT)’이나 ‘이전(PREV)’ 버튼으로 넘겨서만 볼 수 있는 경우  → [불가능]</li>
+            <li>‘다음(NEXT)’이나 ‘이전(PREV)’ 버튼으로 넘겨서도 볼 수 있지만, 직접 탭으로 변경 가능한 경우 → [가능]</li>
+          </ul>
+          
+          <a name="general-message"></a>
+          <h4>메시지</h4>
+          <!--설명: 메시지 / 텍스트 시각화 중심도-->
+          <a name="general-message-messageRatio"></a>
+          <h5>텍스트/시각화 중심도</h5>
+          <h6>정의</h6>
+          <ul>
+            <li>전체 기사 안에서 텍스트와 시각화 요소의 구성 비율이나 의존하는 정도</li>
+          </ul>
+          <h6>항목</h6>
+          <ul>
+            <li>시각화 중심: 아래에 해당하면 시각화 중심 기사로 코딩
+            <ul>
+              <li>분량의 8할 이상이 시각화로 구성되어 있는 경우</li>
+              <li>전체 기사가 시각화의 틀 안에서 진행되는 경우</li>
+            </ul></li>
+            <li>혼합: 시각화 중심, 텍스트 중심이라고 하기 어려운 경우
+            <ul>
+              <li>시각화와 텍스트의 양이 4:6~6:4 정도의 비율로 유지되며 균형을 갖추고 있는 경우</li>
+              <li>본문의 텍스트가 시각화 요소와 대등하게 제공되고 주로 시각화 내용에 관해서만 언급하는 경우</li>
+            </ul></li>
+            <li>텍스트 중심: 아래에 해당하면 텍스트 중심 기사로 코딩
+            <ul>
+              <li>분량의 8할 이상이 기사 텍스트로 구성되어 있는 경우</li>
+              <li>시각화 요소가 많더라도, 전체 기사는 텍스트 서사 중심으로 진행되며 시각화 요소들은 텍스트 기사의 보조자료로 사용되는 경우</li>
+            </ul></li>
+          </ul>
+          <h6>도움말</h6>
+          <ul>
+            <li>여기서 텍스트는 기사 본문을 의미하며, 시각화 안에서 식별/상세화 등을 위해 제공되는 것은 제외함</li>
+            <li>자료의 출처 등을 표시하는 부분은 텍스트로 보지 아니함</li>
+            <li>데이터를 표의 형태로 원문제공하는 경우 시각화나 텍스트로 보지 아니함</li>
+            <li>전체 기사가 항상 텍스트로만, 시각화로만 이루어지는 경우가 없고, 시각화의 경우 크기가 작거나 개수는 하나더라도 설명하는 양이 많을 수 있어서 주의 해야 함</li>
+          </ul>
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>
+  $('select').on('focus', function () {
+    $(this).parent().parent().find('a')[0].click()
+  })
+  $('input[type=checkbox]').on('focus', function () {
+    $(this).parent().parent().parent().find('a')[0].click()
+  })
+  $('.on_fixed').css('height', $(window).height()-100);
+  $('select').each(function() {
+    console.log($(this).attr('name'))
+  })
+</script>
+<style>
+  a {
+    cursor: pointer;
+  }
+  table td:nth-of-type(1) {width:100px;}
+  table td:nth-of-type(2) {width:130px;}
+  
+  .on_fixed {
+    overflow: scroll;
+  }
+  
+  h6 {
+    font-weight: 600;
+    padding: 10px;
+  }
+  h5 {
+    font-weight: 600;
+    color: orangered;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  h4 {
+    font-weight: 700;
+    color: mediumblue;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+  }
+</style>
